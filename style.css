@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.main-form {
+    display: flex;
+}
+
+.decoration,
+.sign-up-form {
+    /* Remove border later */
+    border: 1px solid black;
+    height: 100vh;
+}
+
+.decoration {
+    background-color: black;
+    width: 35vw;
+}
+
+.intro,
+.form,
+.submit {
+    border: 1px solid black;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.intro {
+    height: 34%;
+}
+
+.form {
+    height: 32%;
+}
+
+.submit {
+    height: 34%;
+}
+
+.form-pair {
+    display: flex;
+    gap: 2rem;
+}
+
+.form-item label {
+    display: block;
+}
