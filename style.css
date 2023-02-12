@@ -4,21 +4,59 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: NorseBold;
+    src: url(fonts/Norse-Bold.otf) format("opentype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .main-form {
     display: flex;
 }
 
 .decoration,
 .sign-up-form {
-    /* Remove border later */
-    border: 1px solid black;
     height: 100vh;
 }
 
 .decoration {
-    background-color: black;
+    background-image: url(pictures/photo-1585202900225-6d3ac20a6962.avif);
     width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.decoration p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.7rem;
+    align-self: center;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 200px;
+}
+
+.logo>img {
+    height: 70%;
+}
+
+.logo>span {
+    color: white;
+    font-family: NorseBold;
+    font-size: 6rem;
+}
+
 
 .intro,
 .form,
