@@ -24,24 +24,12 @@
 .form,
 .submit {
     border: 1px solid black;
+    flex: 1;
 }
 
 .sign-up-form {
     display: flex;
     flex-direction: column;
-    flex: 1;
-}
-
-.intro {
-    height: 34%;
-}
-
-.form {
-    height: 32%;
-}
-
-.submit {
-    height: 34%;
 }
 
 .form-pair {
