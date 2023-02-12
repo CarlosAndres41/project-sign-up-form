@@ -123,6 +123,15 @@ body {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .2);
 }
 
+input.error {
+    border: 1px solid red;
+}
+
+.pwd-error {
+    color: red;
+    font-size: 0.5rem;
+    margin-top: 2px;
+}
 
 .submit button {
     font: inherit;
@@ -166,6 +175,10 @@ body {
 
     .logo {
         margin-top: 20px;
+    }
+
+    .intro {
+        padding-right: 35px;
     }
 
     .intro p:nth-child(1) {

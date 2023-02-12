@@ -29,7 +29,7 @@
             </div>
             <div class="form">
                 <p>Let's do this!</p>
-                <form action="">
+                <form action="" id="main-form">
                     <div class="form-pair">
                         <div class="form-item">
                             <label for="f-name">FIRST NAME</label>
@@ -53,17 +53,18 @@
                     <div class="form-pair">
                         <div class="form-item">
                             <label for="pwd">PASSWORD</label>
-                            <input type="password" name="pwd" id="pwd" required>
+                            <input class="error" type="password" name="pwd" id="pwd" required>
                         </div>
                         <div class="form-item">
                             <label for="pwd-conf">CONFIRM PASSWORD</label>
-                            <input type="password" name="pwd-conf" id="pwd-conf" required>
+                            <input class="error" type="password" name="pwd-conf" id="pwd-conf" required>
                         </div>
                     </div>
                 </form>
+                <p class="pwd-error">* Passwords do not match</p>
             </div>
             <div class="submit bg-accent">
-                <button type="submit">Create Account</button>
+                <button type="submit" form="main-form">Create Account</button>
                 <p>Already have an account? <a href="http://example.com">Log in</a></p>
             </div>
         </section>
