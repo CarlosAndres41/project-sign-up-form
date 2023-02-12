@@ -38,6 +38,10 @@ body {
     align-self: center;
 }
 
+.decoration a {
+    text-decoration: none;
+}
+
 .logo {
     background-color: rgba(0, 0, 0, 0.4);
     height: 15vh;
@@ -70,7 +74,8 @@ body {
     background-color: rgb(247, 247, 247);
 }
 
-.intro {
+.intro,
+.form p {
     font-weight: bold;
 }
 
@@ -85,14 +90,39 @@ body {
     width: 100%;
 }
 
+.form {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
 .form-pair {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
+}
+
+.form-item {
+    margin-top: 10px;
 }
 
 .form-item label {
     display: block;
+    color: rgb(135, 135, 135);
+    font-size: 0.6rem;
+    font-weight: bold;
 }
+
+.form-item input {
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.form-item input:focus {
+    outline: none;
+    border: 1px solid rgb(98, 98, 252);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .2);
+}
+
 
 .submit button {
     font: inherit;
@@ -118,5 +148,27 @@ body {
 
 .submit a:link {
     color: #596D48;
+    font-weight: bold;
     text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+    .main-form {
+        flex-direction: column;
+    }
+
+    .decoration {
+        background-image: url(pictures/photo-1585202900225-6d3ac20a6962.avif);
+        width: 100vw;
+        height: 20vh;
+        justify-content: center;
+    }
+
+    .logo {
+        margin-top: 20px;
+    }
+
+    .intro p:nth-child(1) {
+        margin-top: 50px;
+    }
 }
