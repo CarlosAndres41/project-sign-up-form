@@ -12,6 +12,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .main-form {
@@ -57,17 +58,31 @@ body {
     font-size: 6rem;
 }
 
-
 .intro,
 .form,
 .submit {
-    border: 1px solid black;
     flex: 1;
+    padding-left: 30px;
+    padding-right: 150px;
+}
+
+.bg-accent {
+    background-color: rgb(247, 247, 247);
+}
+
+.intro {
+    font-weight: bold;
+}
+
+.intro p:nth-child(1) {
+    padding: 0;
+    margin-top: 100px;
 }
 
 .sign-up-form {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .form-pair {
